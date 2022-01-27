@@ -10,10 +10,10 @@ CREATE TABLE color_palette (
   primary_hex CHAR(6) NOT NULL,
   secondary_name TEXT NOT NULL,
   secondary_hex CHAR(6) NOT NULL
-)
+);
 
 CREATE TABLE random_numbers (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
-  randomInt INT NOT NULL,
-  randomDec DEC NOT NULL
-)
+  random_int INT NOT NULL,
+  random_dec DEC NOT NULL
+);
