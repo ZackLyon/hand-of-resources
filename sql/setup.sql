@@ -3,6 +3,7 @@
 
 DROP TABLE IF EXISTS color_palette;
 DROP TABLE IF EXISTS random_numbers;
+DROP TABLE IF EXISTS desserts;
 
 CREATE TABLE color_palette (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
@@ -17,3 +18,9 @@ CREATE TABLE random_numbers (
   random_int INT NOT NULL,
   random_dec DEC NOT NULL
 );
+
+CREATE TABLE desserts (
+  id BIGINT GENERATED ALWAYS AS IDENTITY,
+  name TEXT NOT NULL,
+  tasted BOOLEAN NOT NULL
+)
